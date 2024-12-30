@@ -5,7 +5,10 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/50 to-background">
+    <section
+      id="contacts"
+      className="py-24 bg-gradient-to-br from-primary/50 to-background"
+    >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
@@ -24,7 +27,7 @@ const Contacts = () => {
                   </div>
                   <a
                     href="mailto:hello@relume.io"
-                    className="text-muted-foreground text-primary-foreground"
+                    className=" text-primary-foreground"
                   >
                     hello@relume.io
                   </a>

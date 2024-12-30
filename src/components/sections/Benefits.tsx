@@ -2,10 +2,12 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import CountUp from "react-countup";
+import img from "../../../public/Organic Social Media Strategy Hero.svg";
 
 const Benefits = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/50 to-background">
+    <section className="py-24 bg-gradient-to-br from-primary to-background shadow-xl ">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -22,38 +24,45 @@ const Benefits = () => {
             </p>
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <div className="text-4xl font-bold text-primary-foreground">
-                  65%
-                </div>
+                <CountUp
+                  end={65}
+                  duration={3}
+                  enableScrollSpy={true}
+                  suffix="%"
+                  className="text-4xl font-bold text-primary-foreground"
+                />
+
                 <p className="text-sm text-muted-foreground">
                   Increase in time saved by easing your social engagement
                 </p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-primary-foreground">
-                  40%
-                </div>
+                <CountUp
+                  end={40}
+                  duration={3}
+                  enableScrollSpy={true}
+                  suffix="%"
+                  className="text-4xl font-bold text-primary-foreground"
+                />
+
                 <p className="text-sm text-muted-foreground">
                   Increase in number of leads generated
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 mt-8">
-              <Button
-                variant="secondary"
-                className="text-primary-foreground hover:text-primary-foreground"
-              >
-                Sign Up <ArrowRight className="ml-2 h-4 w-4" />
+            <div className="flex mt-8">
+              <Button className="bg-white text-lg py-6 px-6 rounded-[5px] hover:bg-white/85 shadow-xl ">
+                Sign Up <ArrowRight className=" h-4 w-4" />
               </Button>
             </div>
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg"
+              src={img}
               alt="Platform benefits"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg  "
             />
           </div>
         </div>
