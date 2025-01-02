@@ -1,71 +1,65 @@
-"use client";
-import { Card } from "../ui/card";
-import Image from "next/image";
-import { Box } from "lucide-react";
+import { Bot, MessageSquare, Share2, Sparkles } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
-const Features = () => {
+export default function Features() {
+  const features = [
+    {
+      icon: <MessageSquare className="w-10 h-10 text-Primary" />,
+      title: "Comment-triggered DM Automation",
+      description:
+        "Automatically send DMs when users comment on your posts, enhancing engagement effortlessly.",
+    },
+    {
+      icon: <Sparkles className="w-10 h-10 text-Primary" />,
+      title: "Smart DM Responses",
+      description:
+        "Respond instantly to keywords with tailored messages, ensuring relevant interactions every time.",
+    },
+    {
+      icon: <Share2 className="w-10 h-10 text-Primary" />,
+      title: "Dual-action Engagement",
+      description:
+        "Like comments and send DMs simultaneously, maximizing your engagement potential with every interaction.",
+    },
+    {
+      icon: <Bot className="w-10 h-10 text-Primary" />,
+      title: "AI-powered Messaging",
+      description:
+        "Utilize AI to craft personalized messages, making every conversation feel unique and meaningful.",
+    },
+  ];
+
   return (
-    <section id="features" className="py-24">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Unlock the Power of Social Media Engagement
-        </h2>
-        <div className="grid md:grid-cols-5 gap-8 items-center">
-          <div className="md:col-span-2 space-y-8">
-            <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-br hover:from-primary/30 hover:to-background">
-              <Box className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">
-                Comment-triggered DM Automation
-              </h3>
-              <p className="text-muted-foreground">
-                Automatically send DMs when users comment on your posts,
-                enhancing engagement effortlessly.
-              </p>
+    <section className="py-20 px-4">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+            Turn Social Media Into Your{" "}
+            <span className="text-Primary ">24/7 Sales Machine</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-5xl mx-auto">
+            Automate your social media engagement and turn every interaction
+            into a potential sale
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {features.map((feature, index) => (
+            <Card
+              key={index}
+              className="group hover:shadow-lg transition-all duration-300 border-primary/10"
+            >
+              <CardContent className="p-6">
+                <div className="mb-6 w-fit  group-hover:scale-125 transition-transform duration-300">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </CardContent>
             </Card>
-            <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-br hover:from-primary/30 hover:to-background">
-              <Box className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Smart DM Responses</h3>
-              <p className="text-muted-foreground">
-                Respond instantly to keywords with tailored messages, ensuring
-                relevant interactions every time.
-              </p>
-            </Card>
-          </div>
-          <div className="md:col-span-1 flex justify-center">
-            <Image
-              src="/placeholder.svg"
-              alt="Features illustration"
-              width={300}
-              height={400}
-              className="rounded-lg shadow-xl"
-            />
-          </div>
-          <div className="md:col-span-2 space-y-8">
-            <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-br hover:from-primary/30 hover:to-background">
-              <Box className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">
-                Dual-action Engagement
-              </h3>
-              <p className="text-muted-foreground">
-                Like comments and send DMs simultaneously, maximizing your
-                engagement potential with every interaction.
-              </p>
-            </Card>
-            <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-br hover:from-primary/30 hover:to-background">
-              <Box className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">
-                AI-powered Messaging
-              </h3>
-              <p className="text-muted-foreground">
-                Utilize AI to craft personalized messages, making every
-                conversation feel unique and meaningful.
-              </p>
-            </Card>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Features;
+}

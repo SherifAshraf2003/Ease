@@ -12,7 +12,6 @@ const Hero = () => {
         initial: { y: 100, opacity: 0 },
         animate: { y: 0, opacity: 1 },
       }}
-      className=" shadow-xl"
     >
       <HeroParallax
         products={products.map((product) => ({

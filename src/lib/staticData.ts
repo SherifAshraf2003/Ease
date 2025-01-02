@@ -1,18 +1,18 @@
-import word1 from "../../public/text1.png";
-import word2 from "../../public/text2.png";
-import word3 from "../../public/text3.png";
-import word4 from "../../public/text4.png";
-import word5 from "../../public/text5.png";
-import word6 from "../../public/text6.png";
-import word7 from "../../public/text7.png";
-import word8 from "../../public/text8.png";
-import word9 from "../../public/text9.png";
-import word10 from "../../public/text10.png";
-import word11 from "../../public/text11.png";
-import word12 from "../../public/text12.png";
-import word13 from "../../public/text13.png";
-import word14 from "../../public/text14.png";
-import word15 from "../../public/text15.png";
+import word1 from "../../public/text.png";
+import word2 from "../../public/text (1).png";
+import word3 from "../../public/text (2).png";
+import word4 from "../../public/text (3).png";
+import word5 from "../../public/text (4).png";
+import word6 from "../../public/text (5).png";
+import word7 from "../../public/text (6).png";
+import word8 from "../../public/text (7).png";
+import word9 from "../../public/text (8).png";
+import word10 from "../../public/text (9).png";
+import word11 from "../../public/text (10).png";
+import word12 from "../../public/text (11).png";
+import word13 from "../../public/text (12).png";
+import word14 from "../../public/text (13).png";
+import word15 from "../../public/text (14).png";
 
 export const products = [
   {

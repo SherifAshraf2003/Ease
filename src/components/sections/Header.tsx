@@ -12,25 +12,25 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8">
           <Link
             href="#features"
-            className="hover:text-black/70 text-PrimaryText  transition-colors"
+            className="hover:text-black/60 text-PrimaryText  transition-colors"
           >
             Features
           </Link>
           <Link
             href="#pricing"
-            className="hover:text-black/70 text-PrimaryText transition-colors"
+            className="hover:text-black/60 text-PrimaryText transition-colors"
           >
             Pricing
           </Link>
           <Link
             href="#contacts"
-            className="hover:text-black/70 text-PrimaryText transition-colors"
+            className="hover:text-black/60 text-PrimaryText transition-colors"
           >
             Support
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button className="bg-Primary text-base text-PrimaryText py-5 px-6 hover:bg-white/85 shadow-lg  transition-all duration-300 rounded-[3px] ">
+          <Button className="bg-Primary text-base text-PrimaryBackground py-5 px-6 hover:bg-Primary/80 shadow-lg  transition-all duration-300 rounded-[3px] ">
             Sign Up
           </Button>
         </div>
