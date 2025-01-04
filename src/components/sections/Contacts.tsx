@@ -68,8 +68,8 @@ export default function ContactSection() {
                   Get in Touch
                 </h2>
                 <p className="max-w-[600px] text-PrimaryText/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We're here to help you with any questions or support you may
-                  need.
+                  We&apos;re here to help you with any questions or support you
+                  may need.
                 </p>
               </motion.div>
 
