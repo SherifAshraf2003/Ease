@@ -5,7 +5,6 @@ import Benefits from "@/components/sections/Benefits";
 import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Pricing from "@/components/sections/Pricing";
-import Testimonials from "@/components/sections/Testimonials";
 import Contacts from "@/components/sections/Contacts";
 import Footer from "@/components/sections/Footer";
 
@@ -17,7 +16,6 @@ export default function LandingPage() {
       <Benefits />
       <Features />
       <HowItWorks />
-      <Testimonials />
       <Pricing />
       <Contacts />
       <Footer />

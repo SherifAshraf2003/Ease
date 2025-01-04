@@ -77,3 +77,37 @@ export const products = [
     thumbnail: word15,
   },
 ];
+
+export const plans = [
+  {
+    name: "Basic",
+    price: {
+      monthly: 0,
+      yearly: 0,
+    },
+    description: "Perfect for getting started",
+    features: [
+      "Automated comment management",
+      "Customizable response templates",
+      "Basic analytics",
+      "Single platform support",
+    ],
+  },
+  {
+    name: "Premium",
+    price: {
+      monthly: 29,
+      yearly: 290,
+    },
+    description: "Best for growing businesses",
+    features: [
+      "Engagement analytics dashboard",
+      "Keyword-triggered responses",
+      "Cross-platform support",
+      "All Basic Plan features",
+      "Advanced analytics tools",
+      "Priority support",
+    ],
+    recommended: true,
+  },
+];
