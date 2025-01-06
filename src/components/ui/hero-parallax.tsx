@@ -55,7 +55,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[250vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -67,7 +67,7 @@ export const HeroParallax = ({
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 md:space-x-20 mb-0 md:mb-20">
+        <motion.div className="flex flex-row-reverse [&>:first-child]:ms-20 space-x-reverse space-x-5 md:space-x-20 mb-0 md:mb-20">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -76,7 +76,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-0 md:mb-20 md:space-x-20 space-x-5 ">
+        <motion.div className="flex flex-row  mb-0  md:mb-20 md:space-x-20 space-x-5 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -85,7 +85,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse md:space-x-20 space-x-5">
+        <motion.div className="flex flex-row-reverse [&>:first-child]:ms-20 space-x-reverse md:space-x-20 space-x-5">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}

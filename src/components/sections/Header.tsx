@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-PrimaryBackground backdrop-blur-sm z-50 border-b border-primary/10">
+    <header className="fixed top-0 w-full bg-PrimaryBackground backdrop-blur-sm z-50 border-b border-Primary/10">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="font-bold text-3xl text-Primary">
           Ease
@@ -30,9 +30,12 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button className="bg-Primary text-base text-PrimaryBackground py-5 px-6 hover:bg-Primary/80 shadow-lg  transition-all duration-300 rounded-[3px] ">
+          <Link
+            href="/login"
+            className="bg-Primary text-base text-PrimaryBackground py-2 px-3 hover:bg-Primary/80 shadow-lg  transition-all duration-300 rounded-[3px] "
+          >
             Sign Up
-          </Button>
+          </Link>
         </div>
       </nav>
     </header>
